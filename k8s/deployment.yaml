@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: oppo
+  name: adidas
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: oppo
+      app: adidas
   template:
     metadata:
       labels:
-        app: oppo
+        app: adidas
     spec:
       containers:
       - image: okteto.dev/ray:latest
-        name: oppo
+        name: adidas
         ports:
         - containerPort: 8080
         env:
@@ -29,6 +29,6 @@ spec:
         - name: Vmess_UUID
           value: "077189f0-9b3b-4a55-8e7e-af874a24c952"
         - name: Vmess_Path
-          value: "/-vmess"
+          value: "/vmess"
         - name: Share_Path
           value: "/crtbnmiirtr"
