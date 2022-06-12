@@ -29,6 +29,6 @@ spec:
         - name: Vmess_UUID
           value: "077189f0-9b3b-4a55-8e7e-af874a24c952"
         - name: Vmess_Path
-          value: "/vmess"
+          value: "/-vmess"
         - name: Share_Path
           value: "/crtbnmiirtr"
